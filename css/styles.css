@@ -1,0 +1,355 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
+}
+
+main {
+  background: url(../img/bg.png) center/cover;
+}
+
+.content_wrapper {
+  margin: 0 1.2rem;
+}
+
+.pc_responsive {
+  display: none;
+}
+
+header {
+  color: #ffffff;
+  background-color: #47b39d;
+}
+
+header .header_container {
+  margin: 0 1.2rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 3.25;
+}
+
+header .menu {
+  height: 3.4rem;
+  background: #000000;
+  margin: 0 auto;
+}
+
+header nav {
+  display: none;
+}
+
+.mainVisual {
+  height: 81.2rem;
+  background: #41baa4;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5.2rem;
+}
+
+.mainVisual h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 18.5rem 0 4.7rem;
+}
+
+.mainVisual p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 0 8%;
+  margin: 0;
+}
+
+.articles {
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.articles .articles_container {
+  padding-bottom: 4rem;
+}
+
+.articles h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 3.63;
+  color: #241913;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 0 4rem;
+}
+
+.articles ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.articles li {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 2.2rem;
+}
+
+.articles a {
+  text-decoration: none;
+}
+
+.articles .rank_date {
+  font-size: 1.2rem;
+  line-height: 3;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 4.8rem;
+  height: 4.8rem;
+  text-align: center;
+  float: left;
+  position: absolute;
+}
+
+.articles img {
+  width: 100%;
+}
+
+.articles .category {
+  background: #47b39d;
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 3;
+  width: 12.2rem;
+  text-align: center;
+}
+
+.articles .articleTitle {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #241913;
+  margin: 1.2rem;
+}
+
+.popular .fa-font-awesome-flag {
+  font-size: 2.8rem;
+  line-height: 1.57;
+}
+
+.popular span {
+  font-size: 1.6rem;
+}
+
+.popular .no1 {
+  background: #d6b038;
+}
+
+.popular .no2 {
+  background: #bfc4c9;
+}
+
+.popular .no3 {
+  background: #b9704e;
+}
+
+.recent .fa-clock {
+  font-size: 2.8rem;
+  line-height: 1.57;
+}
+
+.recent .rank_date {
+  background: #3b4552;
+  line-height: 1.8rem;
+  padding-top: 0.6rem;
+}
+
+.recent span {
+  font-size: 1.4rem;
+}
+
+.features .features_heading {
+  background: #3b4552;
+  padding: 1.6rem 0 2.4rem;
+  text-align: center;
+}
+
+.features .features_heading .fa-check {
+  font-size: 2.8rem;
+  color: #ffffff;
+  line-height: 1.57;
+}
+
+.features .features_heading h2 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1.57;
+  color: #ffffff;
+  margin: 0;
+}
+
+.features .features_heading p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.67;
+  margin: 0;
+}
+
+.features .feature_wrapper {
+  padding-bottom: 8rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.features .featuresTitle .order {
+  background: #47b39d;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  width: 3.452rem;
+  padding: 4.6rem 0 1.6rem;
+  margin: 0 auto 3.2rem;
+}
+
+.features .featuresTitle h3 {
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #47b39d;
+  text-align: center;
+  margin: 0 auto 0.8rem;
+}
+
+.features .featuresTitle .english {
+  font-size: 1.3rem;
+  color: #47b39d;
+  text-align: center;
+  margin: 0 auto 3.2rem;
+}
+
+.features .featureImage {
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 2.4rem;
+}
+
+.features .img1 {
+  background-image: url(../img/macbook-at-the-coffee-shop.jpg);
+}
+
+.features .img2 {
+  background-image: url(../img/two-coffee-at-the-shop.jpg);
+}
+
+.features .img3 {
+  background-image: url(../img/imac-glasses-desk.jpg);
+}
+
+.features .feature_description p {
+  font-size: 1.6rem;
+  color: #241913;
+  margin-bottom: 4.8rem;
+}
+
+.features .feature_description a {
+  display: block;
+  text-decoration: none;
+  background: #ff6c00;
+  font-size: 1.4rem;
+  color: #ffffff;
+  padding: 1.6rem 0;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 767px) {
+  .content_wrapper {
+    margin: 0 2.4rem;
+  }
+  .articles ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .articles li {
+    margin: 0 0.5% 2.2rem;
+  }
+  .feature_description a {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content_wrapper {
+    margin: 0 3.2rem;
+  }
+  .pc_responsive {
+    display: block;
+  }
+  .articles ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .articles li {
+    margin: 0 1.1% 2.2rem;
+  }
+  .articles .no4 {
+    background: #47442f;
+  }
+  .articles .no5 {
+    background: #515054;
+  }
+  .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 44rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .featuresTitle {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .featureImage {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: inherit;
+    margin-bottom: 2.4rem;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .feature_description {
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .feature_description a {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
