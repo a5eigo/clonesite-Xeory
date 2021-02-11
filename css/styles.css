@@ -25,6 +25,35 @@ main {
   display: none;
 }
 
+.heading {
+  background: #3b4552;
+  padding: 1.6rem 0 2.4rem;
+  text-align: center;
+}
+
+.heading .fa-check,
+.heading .fa-heart,
+.heading .fa-phone-alt {
+  font-size: 2.8rem;
+  color: #ffffff;
+  line-height: 1.57;
+}
+
+.heading h2 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1.57;
+  color: #ffffff;
+  margin: 0;
+}
+
+.heading p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.67;
+  margin: 0;
+}
+
 header {
   color: #ffffff;
   background-color: #47b39d;
@@ -175,33 +204,6 @@ header nav {
 
 .recent span {
   font-size: 1.4rem;
-}
-
-.features .features_heading {
-  background: #3b4552;
-  padding: 1.6rem 0 2.4rem;
-  text-align: center;
-}
-
-.features .features_heading .fa-check {
-  font-size: 2.8rem;
-  color: #ffffff;
-  line-height: 1.57;
-}
-
-.features .features_heading h2 {
-  font-size: 2.8rem;
-  font-weight: normal;
-  line-height: 1.57;
-  color: #ffffff;
-  margin: 0;
-}
-
-.features .features_heading p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  line-height: 1.67;
-  margin: 0;
 }
 
 .features .feature_wrapper {

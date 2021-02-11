@@ -25,6 +25,36 @@ main {
   display: none;
 }
 
+.heading {
+  background: #3b4552;
+  padding: 1.6rem 0 2.4rem;
+  text-align: center;
+
+  .fa-check,
+  .fa-heart,
+  .fa-phone-alt {
+    font-size: 2.8rem;
+    color: #ffffff;
+    line-height: 1.57;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.57;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.67;
+    margin: 0;
+  }
+}
+
+
 // ヘッダー
 header {
   color: #ffffff;
@@ -189,33 +219,6 @@ header {
 
 // 特徴
 .features {
-  .features_heading {
-    background: #3b4552;
-    padding: 1.6rem 0 2.4rem;
-    text-align: center;
-
-    .fa-check {
-      font-size: 2.8rem;
-      color: #ffffff;
-      line-height: 1.57;
-    }
-
-    h2 {
-      font-size: 2.8rem;
-      font-weight: normal;
-      line-height: 1.57;
-      color: #ffffff;
-      margin: 0;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #ffffff;
-      line-height: 1.67;
-      margin: 0;
-    }
-  }
-
   .feature_wrapper {
     padding-bottom: 8rem;
     border-bottom: 1px solid #e5e5e5;
