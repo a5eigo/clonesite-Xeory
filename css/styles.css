@@ -256,6 +256,10 @@ header nav {
   background-image: url(../img/imac-glasses-desk.jpg);
 }
 
+.features .img4 {
+  background-image: url(../img/macbook-holding.png);
+}
+
 .features .feature_description p {
   font-size: 1.6rem;
   color: #241913;
@@ -312,7 +316,11 @@ header nav {
   .articles .no5 {
     background: #515054;
   }
-  .column {
+  .features .feature_wrapper {
+    padding-bottom: 0;
+    position: relative;
+  }
+  .features .flex_container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -323,33 +331,47 @@ header nav {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0;
   }
-  .featuresTitle {
-    width: 50%;
+  .features .featuresTitle {
+    width: 60%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .featureImage {
+  .features .featuresTitle .order {
+    margin: 0 auto 3.2rem 0;
+  }
+  .features .featuresTitle h3 {
+    text-align: left;
+    margin: 0 auto 0.8rem;
+  }
+  .features .featuresTitle .english {
+    text-align: left;
+    margin: 0 auto 3.2rem;
+  }
+  .features .featureImage {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
     height: inherit;
     margin-bottom: 2.4rem;
+  }
+  .features .right {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  .feature_description {
-    width: 50%;
+  .features .feature_description {
+    width: 60%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .feature_description a {
-    width: 30%;
-    margin: 0 auto;
+  .features .feature_description a {
+    width: 19.4rem;
+    margin: 0 auto 0 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

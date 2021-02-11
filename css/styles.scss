@@ -270,6 +270,10 @@ header {
     background-image: url(../img/imac-glasses-desk.jpg);
   }
 
+  .img4 {
+    background-image: url(../img/macbook-holding.png);
+  }
+
   .feature_description {
     p {
       font-size: 1.6rem;
@@ -344,39 +348,74 @@ header {
   }
 
   // 特徴
-  .column {
-    display: flex;
-    height: 44rem;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+  .features {
+    .feature_wrapper {
+      padding-bottom: 0;
+      position: relative;
+    }
+    .flex_container {
+      display: flex;
+      // width: 120rem;
+      height: 44rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0;
+    }
 
-  .featuresTitle {
-    width: 50%;
-    order: 1;
-  }
+    .featuresTitle {
+      width: 60%;
+      order: 1;
+      .order {
+        margin: 0 auto 3.2rem 0;
+      }
 
-  .featureImage {
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40%;
-    height: inherit;
-    margin-bottom: 2.4rem;
-    order: 3;
-  }
+      h3 {
+        text-align: left;
+        margin: 0 auto 0.8rem;
+      }
 
-  .feature_description {
-    width: 50%;
-    order: 2;
+      .english {
+        text-align: left;
+        margin: 0 auto 3.2rem;
+      }
+    }
 
-    a {
-      width: 30%;
-      // padding: 1.25rem 0;
-      margin: 0 auto;
+    .featureImage {
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 40%;
+      height: inherit;
+      margin-bottom: 2.4rem;
+    }
+
+    .right {
+      order: 3;
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // float: right;
+    }
+
+    .left {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // float: left;
+    }
+
+    .feature_description {
+      width: 60%;
+      order: 2;
+
+      a {
+        width: 19.4rem;
+        margin: 0 auto 0 0;
+      }
     }
   }
 }
 
-
-//  2/7メディアクエリでheightを読み込めない時の方法
+//  2/7にやること
+// 余白の調整
+// タブレット版の最近の投稿が５つになっているのを３つに
