@@ -25,7 +25,7 @@ main {
   display: none;
 }
 
-.heading {
+.section_header {
   background: #3b4552;
   padding: 1.6rem 0 2.4rem;
   text-align: center;
@@ -54,6 +54,21 @@ main {
   }
 }
 
+// .heading {
+//   font-size: 3.6rem;
+//   font-weight: normal;
+//   line-height: 1.4;
+//   color: #47b39d;
+//   text-align: center;
+//   margin: 0 auto 0.8rem;
+// }
+
+// .english {
+//   font-size: 1.3rem;
+//   color: #47b39d;
+//   text-align: center;
+//   margin: 0 auto 3.2rem;
+// }
 
 // ヘッダー
 header {
@@ -236,7 +251,7 @@ header {
       margin: 0 auto 3.2rem;
     }
 
-    h3 {
+    .heading1 {
       font-size: 3.6rem;
       font-weight: normal;
       line-height: 1.4;
@@ -354,20 +369,31 @@ header {
   .features {
     .feature_wrapper {
       padding-bottom: 0;
+      margin: 0 auto;
       position: relative;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .content_wrapper {
+        max-width: 120rem;
+        margin: 0 auto;
+      }
+
+      .contents-left,
+      .contents-right {
+        height: 44rem;
+        width: 54%;
+      }
     }
-    .flex_container {
-      display: flex;
-      // width: 120rem;
-      height: 44rem;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin: 0;
+
+    .contents-right {
+      float: right;
     }
 
     .featuresTitle {
-      width: 60%;
-      order: 1;
       .order {
         margin: 0 auto 3.2rem 0;
       }
@@ -389,36 +415,148 @@ header {
       background-repeat: no-repeat;
       width: 40%;
       height: inherit;
-      margin-bottom: 2.4rem;
+      margin-bottom: 0;
     }
 
     .right {
       order: 3;
-      // position: absolute;
-      // top: 0;
-      // right: 0;
-      // float: right;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
 
     .left {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // float: left;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     .feature_description {
-      width: 60%;
-      order: 2;
-
       a {
         width: 19.4rem;
+        padding: 1.2rem 0;
         margin: 0 auto 0 0;
       }
     }
   }
 }
 
-//  2/7にやること
-// 余白の調整
+//  2/12にやること
 // タブレット版の最近の投稿が５つになっているのを３つに
+
+// サービス
+.service {
+  .content_wrapper {
+    margin-bottom: 2rem;
+  }
+  .service_content {
+    padding: 18.2rem 0 2.8rem 0;
+  }
+
+  .heading2 {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #47b39d;
+    text-align: center;
+    margin: 0 auto 0.8rem;
+  }
+
+  .english2 {
+    font-size: 1.3rem;
+    color: #47b39d;
+    text-align: center;
+    margin: 0 auto 4.8rem;
+  }
+
+  .btn2 {
+    display: block;
+    text-decoration: none;
+    background: #47b39d;
+    font-size: 1.6rem;
+    color: #ffffff;
+    width: 50%;
+    padding: 1.6rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+}
+
+// 会社紹介
+.company {
+  .google_map {
+    // margin-bottom: 9.6rem;
+  }
+  .content_wrapper {
+    padding: 9.6rem 0;
+  }
+  .company_info {
+    font-size: 1.6rem;
+    color: hsl(21, 31%, 11%);
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0.8rem 1.2rem;
+    margin: 0 0;
+    &:first-child {
+      padding-top: 2.7rem;
+      border-top: 2px solid #47b39d;
+    }
+  }
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    padding-top: 0.4rem;
+    margin: 0;
+  }
+}
+
+// お問い合わせ
+.inquiry {
+  .inquiry_container {
+    background: #47B39D;
+  }
+  .content_wrapper {
+    .form_container {
+      padding: 6rem 0;
+    }
+    form {
+      label {
+        display: block;
+        font-size: 1.6rem;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      input {
+        display: inline-block;
+        width: 100%;
+        height: 3.6rem;
+        border-radius: 0.3rem;
+        border: 0.1rem solid #cccccc;
+        margin-bottom: 2.24rem;
+      }
+
+      textarea {
+        width: 100%;
+        height: 24.8rem;
+        border-radius: 0.3rem;
+        border: 0.1rem solid #cccccc;
+        margin-bottom: 2.24rem;
+      }
+    }
+
+    button {
+      display: block;
+      font-size: 1.5rem;      
+      color: #ffffff;
+      width: 30%;
+      height: 4.8rem;
+      background-color: #131D2A;
+      border-radius: 0.3rem;
+      margin: 0 auto 0;
+    }
+  }
+}
+
+// サービス以下のレスポンシブから
